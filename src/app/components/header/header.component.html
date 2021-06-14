@@ -1,0 +1,105 @@
+<nav id="header" [ngClass]="{'isSearching' : isSearching ==true, 'isHamOpen': isHamOpen == true}">
+    <div class="header-content-list">
+        <div class="ham-menu" (click)="toggleHamMenu()">
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+        </div>
+
+        <div class="logo-container">
+            <a class="logo" href="/"> </a>
+        </div>
+
+        <div class="center">
+            <a href="/mac">
+                Mac
+            </a>
+
+            <a href="/ipad">
+                iPad
+            </a>
+
+            <a href="/iphone">
+                iPhone
+            </a>
+
+            <a href="/watch">
+                Watch
+            </a>
+
+            <a href="/tv">
+                TV
+            </a>
+
+            <a href="/music">
+                Music
+            </a>
+
+            <a href="/support">
+                Support
+            </a>
+        </div>
+
+        <div class="end">
+            <a class="search" href="javascript:;" (click)="toggleSearchBar()"> </a>
+            <a class="shop" href="/shop"> </a>
+        </div>
+
+
+        <!-- search: -->
+        <div class="search-list">
+            <a class="search" href="javascript:;"> </a>
+            <input placeholder="Search apple.com">
+            <a class="close" href="javascript:;" (click)="toggleSearchBar()">
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="mobile-header-content">
+        <ul class="list">
+            <li>
+                <a href="/mac">
+                    Mac
+                </a>
+            </li>
+            <li>
+
+                <a href="/ipad">
+                    iPad
+                </a>
+            </li>
+            <li>
+
+                <a href="/iphone">
+                    iPhone
+                </a>
+            </li>
+            <li>
+
+                <a href="/watch">
+                    Watch
+                </a>
+            </li>
+            <li>
+
+                <a href="/tv">
+                    TV
+                </a>
+            </li>
+            <li>
+
+                <a href="/music">
+                    Music
+                </a>
+            </li>
+            <li>
+
+                <a href="/support">
+                    Support
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

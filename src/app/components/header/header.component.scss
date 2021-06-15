@@ -12,12 +12,14 @@
     justify-content: center;
     align-items: center;
 
+    transition: all 600ms linear;
+
+
     .header-content-list {
         min-height: 44px;
         max-height: 48px;
         padding: 0 4%;
         box-sizing: border-box;
-        transition: all 600ms linear;
 
         width: 100%;
         max-width: 980px;
@@ -103,7 +105,7 @@
             color: #f5f5f7;
             opacity: 0.8;
             white-space: nowrap;
-            transition: opacity 800ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            transition: opacity 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
 
             &:hover {
                 opacity: 1;
@@ -187,6 +189,8 @@
         height: 0;
         overflow: hidden;
         width: 100%;
+        transition: all 800ms ease;
+
         ul {
             list-style: none;
             padding: 0 40px;
